@@ -21,17 +21,18 @@ Product.belongsToMany(Tag, {
   through: {
     model: 'product_tag',
   },
-  foreignKey: 'tag_id'
-  //do we need otherKey?
+  foreignKey: 'product_id'
+  //do we need otherKey? should this be inside through or out?
 })
 // Tags belongToMany Products (through ProductTag)
 Tag.belongsToMany(Product, {
   through: {
     model: 'product_tag',
   },
-  foreignKey: 'product_id'
+  foreignKey: 'tag_id'
   //do we need otherKey?
 });
+
 module.exports = {
   Product,
   Category,
