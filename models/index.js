@@ -1,5 +1,3 @@
-//ASK ABOUT FOREIGN KEYS
-
 // import models
 const Product = require('./Product');
 const Category = require('./Category');
@@ -22,7 +20,7 @@ Product.belongsToMany(Tag, {
     model: ProductTag,
   },
   foreignKey: 'product_id'
-  //do we need otherKey? should this be inside through or out?
+
 })
 // Tags belongToMany Products (through ProductTag)
 Tag.belongsToMany(Product, {
@@ -30,7 +28,7 @@ Tag.belongsToMany(Product, {
     model: ProductTag,
   },
   foreignKey: 'tag_id'
-  //do we need otherKey?
+
 });
 
 module.exports = {
