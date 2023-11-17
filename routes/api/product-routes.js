@@ -129,7 +129,7 @@ router.delete('/:id', async (req, res) => {
           return;
       }
 
-      res.status(200).json(deleteCategory);
+      res.status(200).json(deleteProduct);
 
   } catch (error) {
     res.status(500).json(error);
