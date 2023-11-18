@@ -40,7 +40,13 @@ In order to install, please run `npm i`.
 <a id="Usage"></a>
 ## Usage 🧮
 
-In order to use this app, please run `npm start` after you have sourced the database in MYSQL and run the seeds.
+In order to use this app, please run `npm start` after you have sourced the database and run the seeds.
+
+Then, the client can make a `GET`, `POST`, `PUT`, or `DELETE` request and update the database.
+
+![This example demonstrates the client about to make a post request to add a new category to the database.](./assets/images/shopMINTYreq.png)  
+
+Please refer to [the shopMINTY walkthrough video](url) for more information on how to use this app.
 
 
 
