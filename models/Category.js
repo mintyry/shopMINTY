@@ -1,9 +1,11 @@
+//require Model and DataTypes from sequelize library to use and make new models
 const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection.js');
 
 class Category extends Model { }
 
+//create new model called Category; essentially establish what would be a category table with its columns and constraints in MYSQL.
 Category.init(
   {
     id: {

@@ -1,5 +1,7 @@
+//require dotenv to protect sensitive db info
 require('dotenv').config();
 
+//require instance of Sequelize to make a new instance of it to connect to MYSQL
 const Sequelize = require('sequelize');
 
 const sequelize = process.env.JAWSDB_URL //if this is defined, it is running in production; if not defined, it's in development, and is based on our db/server
@@ -15,5 +17,5 @@ const sequelize = process.env.JAWSDB_URL //if this is defined, it is running in 
         decimalNumbers: true,
       },
     });
-//maybe port 3306
+
 module.exports = sequelize;

@@ -53,6 +53,7 @@ router.put('/:id', async (req, res) => {
         id: req.params.id
       }
     });
+         //if try to update tag with an id that doesnt exist, this runs.
     if (!updateTag[0]) {
       res.status(400).json({ message: 'Can\'t update a tag that doesn\'t exist.' });
       return;
@@ -73,7 +74,7 @@ router.delete('/:id', async (req, res) => {
           id: req.params.id
         }
       })
-
+     //if try to delete tag with an id that doesnt exist, this runs.
       if(!deleteTag){
         res.status(404).json(
           {

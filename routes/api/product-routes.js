@@ -120,7 +120,7 @@ router.delete('/:id', async (req, res) => {
           id: req.params.id
         }
       })
-
+     //if try to delete product with an id that doesnt exist, this runs.
       if(!deleteProduct){
         res.status(404).json(
           {

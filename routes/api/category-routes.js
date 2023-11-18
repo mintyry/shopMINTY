@@ -21,9 +21,9 @@ router.get('/:id', async (req, res) => {
     //findbyPk, and that primary key will be an integer specified by client
     const singleCategory = await Category.findByPk(req.params.id,
       {
-        //why do we include this?
         include: [Product]
       });
+      //if try to find category with an id that doesnt exist, this runs.
     if (!singleCategory) {
       res.status(404).json({ message: 'No category exists for this id.' });
       return;
@@ -56,6 +56,7 @@ router.put('/:id', async (req, res) => {
       }
     )
 
+         //if try to find category with an id that doesnt exist, this runs.
     if(!updateCategory[0]) {
       res.status(404).json(
         {

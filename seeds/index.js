@@ -23,4 +23,5 @@ const seedAll = async () => {
   process.exit(0);
 };
 
+//run this to seed all tables
 seedAll();

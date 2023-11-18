@@ -4,6 +4,7 @@ const sequelize = require('../config/connection.js');
 
 class Tag extends Model { }
 
+//create new model called Tag; essentially establish what would be a tag table with its columns and constraints in MYSQL.
 Tag.init(
   {
     id: {
