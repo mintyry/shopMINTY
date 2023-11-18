@@ -46,7 +46,7 @@ Then, the client can make a `GET`, `POST`, `PUT`, or `DELETE` request and update
 
 ![This example demonstrates the client about to make a post request to add a new category to the database.](./assets/images/shopMINTYreq.png)  
 
-Please refer to [the shopMINTY walkthrough video](url) for more information on how to use this app.
+Please refer to [the shopMINTY walkthrough video](https://watch.screencastify.com/v/kTCR5ZiSJ3yoQO9S5JAW) for more information on how to use this app.
 
 
 
